@@ -16,8 +16,76 @@ body {
 }
 
 #side-bar {
-    background-color: yellow;
+    background-color: #242531;
     flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+#side-bar > .profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#side-bar > .profile-wrapper > h4 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+#side-bar > .profile-wrapper > p {
+    color: #8a8892;
+    margin-bottom: 5px;
+}
+
+#side-bar > .information-wrapper {
+    background-color: #1f1f2b;
+    flex: 1;
+    margin-top: 20px;
+    padding: 20px 30px;
+}
+
+#side-bar > 
+.information-wrapper > 
+.information-container {
+    border-bottom-width: 2px;
+    border-bottom-color: #8a8892;
+    border-bottom-style: solid;
+    padding-bottom: 20px;
+}
+
+#side-bar > 
+.information-wrapper > 
+.information-container > 
+.information-row {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+#side-bar > 
+.information-wrapper > 
+.information-container > 
+.information-row > span {
+    display: inline-block;
+    flex: 1;
+}
+
+#side-bar > 
+.information-wrapper > 
+.information-container > 
+.information-row > span:first-child
+{
+    color: #FFF;
+}
+
+#side-bar > 
+.information-wrapper > 
+.information-container > 
+.information-row > span:last-child
+{
+    color: #8a8892;
+    text-align: right;
 }
 
 #main {
@@ -34,4 +102,29 @@ body {
 #right-menu {
     background-color: lightblue;
     flex: 1;
+}
+
+#user-profile {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+#user-profile > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#user-profile > .status-indicator {
+    width: 20px;
+    height: 20px;
+    background-color: #f4c341;
+    display: block;
+    right: 5px;
+    bottom: 5px;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 0px #f4c341;
 }
