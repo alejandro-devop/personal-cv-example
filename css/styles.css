@@ -200,3 +200,15 @@ body {
     color: #f4c341;
     margin-right: 5px;
 }
+
+.social-network-wrapper {
+    background-color: #252531;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-network-wrapper a {
+    color: #8a8892;
+    text-decoration: none;
+}
