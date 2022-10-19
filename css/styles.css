@@ -117,6 +117,20 @@ body {
     align-items: center;
 }
 
+/* .progress {
+    width: 100%;
+    height: 20px;
+}
+.progress::-webkit-meter-optimum-value {
+    background-color: red;
+}
+.progress::-webkit-meter-bar {
+    border-radius: 0;
+    background-color: yellow;
+    padding: 0;
+    border: 0;
+} */
+
 #user-profile > img {
     height: 100%;
     /* position: absolute; */
@@ -136,11 +150,43 @@ body {
     box-shadow: 0px 0px 6px 0px #f4c341;
 }
 
-.technologies-wrapper {
+.technologies-wrapper, .skills-wrapper {
     padding: 20px 0px 20px 0px;
     border-bottom-color: #8a8892;
     border-bottom-width: 2px;
     border-bottom-style: solid;
+}
+
+.skill-progress-wrapper {
+    margin-bottom: 5px;
+}
+
+.skill-progress-wrapper label {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 5px;
+    left: 0px;
+}
+
+.skill-progress-wrapper label span {
+    color: #FFF;
+    font-size: 0.65rem;
+}
+
+.skill-progress-wrapper meter {
+    width: 100%;
+    height: 10px;
+}
+
+.skill-progress-wrapper meter::-webkit-meter-optimum-value {
+    background-color: #f4c341;
+}
+
+.skill-progress-wrapper meter::-webkit-meter-bar {
+    background-color: #191925;
+    border-radius: 2px;
+    border: 0;
 }
 
 .technologies-wrapper ul  li {
